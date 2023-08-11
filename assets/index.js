@@ -11,7 +11,7 @@ ${data.description}
 - [Usage](#usage)
 - [Contributors](#credits)
 - [Tests](#test)
-- [Qestions](#gitUser)
+- [Questions](#gitUser)
 ## Installation
 ${data.installation}
 ## Usage
@@ -26,50 +26,50 @@ ${data.test}
 www.github.com/${data.gitUser}
 ${data.email}
 `;
-//the start of the prompts to the user
+//user prompts
 inquirer
   .prompt([
     {
       type: "input",
       name: "projectTitle",
       //# for title
-      message: "What is the project?",
+      message: "What is the project title?",
     },
     {
       type: "input",
       //## from here down
-      message: "Give me a description",
+      message: "Give me a description, please",
       name: "description",
     },
     {
       type: "input",
-      message: "What are the installation?",
+      message: "What are the installations to be used?",
       name: "installation",
     },
     {
       type: "input",
-      message: "Who, if anyone was a collaborator on this project?",
+      message: "Are there any collaborators that deserve credit?",
       name: "credits",
     },
     {
       type: "list",
-      message: "What is the license?",
+      message: "What's the license you're using?",
       name: "license",
       choices: ["Boost_1.0", "MIT", "Apache_2"],
     },
     {
       type: "input",
-      message: "What are the instructions?",
+      message: "Are there any instructions the user must be aware of?",
       name: "test",
     },
     {
       type: "input",
-      message: "What is your username?",
+      message: "Enter your username.",
       name: "gitUser",
     },
     {
       type: "input",
-      message: "What is your email?",
+      message: "What's your email address?",
       name: "email",
     },
   ])
@@ -81,8 +81,7 @@ inquirer
     );
   });
 // TODO: Include packages needed for this application
-// TODO: Create an array of questions for user input
-const questions = [];
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app

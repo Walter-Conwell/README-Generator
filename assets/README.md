@@ -1,23 +1,23 @@
 
-# read me generator
+# testing
 ## Description
-test
+this is a test
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributors](#credits)
 - [Tests](#test)
-- [Qestions](#gitUser)
+- [Questions](#gitUser)
 ## Installation
-node
+installations
 ## Usage
 undefined
 ## Badges
-[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Boost_1.0-red.svg)](https://opensource.org/licenses/Boost_1.0)
 ## Contributors
-jc
+adrian
 ## Tests
-test
+answer, get
 ## Questions
-www.github.com/wc
-@gmail.com
+www.github.com/git
+email
