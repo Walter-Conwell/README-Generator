@@ -1,7 +1,7 @@
 
-# testing
+# sample test
 ## Description
-this is a test
+test for demo
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,15 +9,15 @@ this is a test
 - [Tests](#test)
 - [Questions](#gitUser)
 ## Installation
-installations
+test
 ## Usage
 undefined
 ## Badges
-[![License](https://img.shields.io/badge/License-Boost_1.0-red.svg)](https://opensource.org/licenses/Boost_1.0)
+[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 ## Contributors
-adrian
+test
 ## Tests
-answer, get
+test
 ## Questions
-www.github.com/git
+www.github.com/user
 email
