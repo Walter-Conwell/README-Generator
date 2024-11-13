@@ -18,6 +18,8 @@ ${data.installation}
 ${data.usage}
 ## Badges
 [![License](https://img.shields.io/badge/License-${data.license}-red.svg)](https://opensource.org/licenses/${data.license})
+## User-Entered License
+${data.licenseEntered}
 ## Contributors
 ${data.credits}
 ## Tests
@@ -33,33 +35,39 @@ inquirer
       type: "input",
       name: "projectTitle",
       //# for title
-      message: "Create a project title.",
+      message: "What's the name of your Project?",
     },
     {
       type: "input",
       //## from here down
-      message: "Enter a Short-but-sweet description.",
+      message: "Description... Technologies used?",
       name: "description",
     },
     {
       type: "input",
-      message: "Please enter Installation(s)",
+      message:
+        "What are the dependencies/requirements to install for the application?",
       name: "installation",
     },
     {
       type: "input",
-      message: "Did you have any collaborators for this work?",
+      message: "Are there any collaborators, list and provide links",
       name: "credits",
     },
     {
       type: "list",
       message: "What license was used?",
       name: "license",
-      choices: ["Boost_1.0", "MIT", "Apache_2"],
+      choices: ["Boost_1.0", "MIT", "Apache_2", "Not listed"],
     },
     {
       type: "input",
-      message: "What instructions are there for user/devs?",
+      message: "If your license is not listed, enter it here:",
+      name: "licenseEntered",
+    },
+    {
+      type: "input",
+      message: "Give users a brief Intro to your Application?",
       name: "test",
     },
     {
@@ -74,18 +82,20 @@ inquirer
     },
   ])
   //prompts end
+
+  // following code writes content of user input to the new readme.md
+  // an error is thrown, or success message is thrown.
   .then((responseData) => {
     const readMeContent = createREADME(responseData);
     fs.writeFile("README.md", readMeContent, (err) =>
-      err ? console.log(err) : console.log("Success!")
+      err ? console.log(err) : console.log("Success!"),
     );
   });
-// TODO: Include packages needed for this application
-// TODO: Create an array of questions for user input
+
+//
 const questions = [];
-// TODO: Create a function to write README file
+// writes readme.md
 function writeToFile(fileName, data) {}
-// TODO: Create a function to initialize app
+// initializes app
 function init() {}
-// Function call to initialize app
 init();
