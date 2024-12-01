@@ -1,7 +1,7 @@
 
-# testingGen
+# test3
 ## Description
-node.js, npm, inquirer
+node.js javascript, inquirer
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,17 +9,17 @@ node.js, npm, inquirer
 - [Tests](#test)
 - [Qestions](#gitUser)
 ## Installation
-inquirer
+run node index.js
 ## Usage
 undefined
 ## Badges
 [![License](https://img.shields.io/badge/License-Not listed-red.svg)](https://opensource.org/licenses/Not listed)
 ## User-Entered License
-testFooBar
+deez
 ## Contributors
-n/a
+adrian
 ## Tests
-readme generator
+create your own readme with this generator. There is more to come!
 ## Questions
-www.github.com/Walter-Conwell
-n/a
+www.github.com/fooBar.github.com
+wc@gmail.com

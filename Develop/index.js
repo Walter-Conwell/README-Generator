@@ -81,7 +81,7 @@ inquirer
       name: "email",
     },
   ])
-  //prompts end
+  //prompts end add path for new README.md (/Develop) at the end for the user for easy access.
 
   // following code writes content of user input to the new readme.md
   // an error is thrown, or success message is thrown.
